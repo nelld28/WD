@@ -1,0 +1,66 @@
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #FF8C00;
+  padding: 10px;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: footer; }
+
+.header{
+  background-image: url('cats.jpg');
+  line-height: 100px;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Aladin';
+  color: white;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu > div {
+  background-color: #f1f1f1;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 20px; 
+}
+
+.menu a{
+  text-decoration: none;
+  color: black; 
+}
+
+.menu a:hover{
+  color: #ff9900;
+}
+
+.main {
+  background: blue;
+  width: 1000px;
+  height: 1000px;
+  font-size: 20px;
+}
+
+
+
+footer{
+  background-color: red;
+  text-align: center;
+}
+
+.foot{
+  display: inline;
+}

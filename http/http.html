@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTTP & Security</title>
+    <style>
+        body {
+            padding: 10px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>
+            <p>Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia
+                documents,
+                such as HTML. It was designed for communication between web browsers and web servers.</p>
+        </li>
+
+        <li>
+            <p>HTTP is called a stateless protocol as the server does not keep any data/state between 2 requests.</p>
+        </li>
+
+        <li>
+            <p>In client-server protocols, like HTTP, sessions consist of three phases:
+                <ol>
+                    <li>The client establishes a TCP connection (or the appropriate connection if the transport layer is
+                        not TCP).</li>
+                    <li>The client sends its request, and waits for the answer.</li>
+                    <li>The server processes the request, sending back its answer, providing a status code and
+                        appropriate data.</li>
+                </ol>
+            </p>
+        </li>
+
+        <li>
+            <p>On a GET request, the parameters are stored in the form of name=value and these parameters appear in the
+                URL. Multiple parameters can appear after the ? sign in the URL which are seperated by & sign.</p>
+            <p>On a POST request, the parameters do not appear on the URL. POST carries request parameter in message
+                body which make it secure</p>
+        </li>
+
+        <li>
+            <p>HTTP response status codes indicate whether a specific HTTP request has been successfully completed.</p>
+            <p>HTTP status Codes:
+                <ul>
+                    <li>200 means request has succeeded.</li>
+                    <li>404 means the server cannot find the requested resource.</li>
+                </ul>
+            </p>
+        </li>
+
+        <li>
+            <p>An HTTP cookie (web cookie, browser cookie) is a small piece of data that a server sends to the user's
+                web browser. </p>
+            <p>Cookie: yummy_cookie=choco; tasty_cookie=strawberry</p>
+            <p>a web server might send a cookie containing the username that was last used to log into a website, so
+                that it may be filled in automatically the next time the user logs in</p>
+        </li>
+
+        <li>
+            <p>Cookies are often used in web application to identify a user and their authenticated session, so stealing
+                a cookie can lead to hijacking the authenticated user's session</p>
+        </li>
+
+        <li>
+            <p>Session hijacking is nothing but a type of security attack on any of the user session that is running on an internet network connection. Sometimes this method of hijacking is also referred as cookie hijacking. Cookies are often used in web application to identify a user and their authenticated session, so stealing
+                a cookie can lead to hijacking the authenticated user's session</p>
+            <p>Cross-site scripting (XSS) is a security exploit which allows an attacker to inject into a website
+                malicious client-side code.</p>
+        </li>
+
+        <li>
+            <p> Cross-site request forgery (CSRF)is a type of malicious exploit of a website where unauthorized commands
+                are transmitted from a user that the web application trusts.</p>
+        </li>
+        <li>
+            <p>Cross-Origin Resource Sharing (CORS) is a mechanism that uses additional HTTP headers to tell a browser
+                to let a web application running at one origin (domain) have permission to access selected resources
+                from a server at a different origin.</p>
+            <p>CORS is used by:
+                <ul>
+                    <li>Invocations of the XMLHttpRequest or Fetch APIs in a cross-site manner, as discussed above.</li>
+                    <li>Web Fonts</li>
+                    <li>WebGL textures.</li>
+                    <li>Images/video frames drawn to a canvas using drawImage().</li>
+                </ul>
+            </p>
+        </li>
+
+    </ol>
+</body>
+
+</html>

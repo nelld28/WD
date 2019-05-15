@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="grid-container"> 
+    <div class="item1">
+      <div class="header">
+      <h1><a href="index.html">Cat</a></h1>
+    </div>
+  </div>
+  <div class="item2">
+    <div class="menu">
+      <div><a href="index.html">Home</a></div>
+      <div><a href="form.html">Register or Login</a></div>
+      <div><a href="about.html">About</a></div>
+      <div><a href="breed.html">Breed</a></div>
+        <div><a href="gallery.html">Gallery</a></div>
+  </div>
+</div>
+
+  <div class="main">
+  			<form>
+		<h1>Registration</h1>
+	<div>
+		<label>name:</label>
+		<input type="text" name="userName">
+	</div>
+	<div>
+		<label>email address:</label>
+		<input type="email" name="userEmail">
+	</div>
+	<div>
+		<label>Gender:</label>
+		<input type="radio" name="gender" value="female">female
+		<input type="radio" name="gender" value="male">male
+	</div>
+	<div>
+		<input type="submit" value="Submit">
+	</div>
+</form>
+
+		<form name="myform" onsubmit="return validateform()">
+			<h1>Login</h1>
+			<div>
+				<label>Username</label>
+				<input type="text" name="userName">
+			</div>
+			<div>
+				<label>Password</label>
+				<input type="password" name="password">
+			</div>
+			<div>
+				<input type="submit" value="Login">
+			</div>
+		</form>
+	
+  	
+  </div>
+
+  <div class="item4">
+    <footer>
+    <div class="icon">
+        <a href = "https://www.instagram.com" target = "_blank"><i class = "fa fa-instagram"></i></a>
+        <a href = "https://www.twitter.com" target="_blank"> <i class = "fa fa-twitter"></i></a>
+        <a href = "https://www.facebook.com" target="_blank"><i class = "fa fa-facebook"></i></a>
+        <a href = "https://www.linkedin.com" target="_blank"><i class = "fa fa-linkedin"></i></a>
+        <a href = "https://quickguide.tumblr.com" target="_blank"><i class = "fa fa-tumblr"></i></a>
+        <a href = "https://vimeo.com" target="_blank"><i class = "fa fa-vimeo"></i></a>
+      </div>
+    &copy; 2019 All Rights Reserved
+  </footer>
+  </div>
+</div>
+<script src="form.js"></script>
+</body>
+</html>
